@@ -4,7 +4,7 @@ const userInput = document.getElementById('userInput');
 const sendButton = document.getElementById('sendButton');
 
 // Configuración
-const HUGGING_FACE_TOKEN = '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';
+const HUGGING_FACE_TOKEN = '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';
 const HUGGING_FACE_API = 'https://api-inference.huggingface.co/models/microsoft/DialoGPT-large';
 
 // BASE DE CONOCIMIENTO AMPLIA Y COMPLETA
@@ -272,5 +272,6 @@ userInput.focus();
 setTimeout(() => {
     addMessage('🔒 **Sistema verificado:** Todas las funciones operativas al 100%. Puedes preguntar sobre cualquier tema con total confianza en la precisión de las respuestas.', false, true);
 }, 1000);
+
 
 
