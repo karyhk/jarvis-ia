@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 2.0 - JARVIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>PROJECT 2.0 - <span class="jarvis">JARVIS</span></h1>
+            </div>
+            <div class="subtitle">Asistente de IA con Búsqueda Web Avanzada</div>
+            <div class="api-status">
+                <span id="hfStatus" class="status-online">Hugging Face: Online</span>
+                <span id="searchStatus" class="status-online">Búsqueda: Online</span>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>¡Hola! Soy JARVIS, tu asistente de IA avanzado. Estoy completamente operativo con Hugging Face y búsqueda web. ¿En qué puedo ayudarte hoy?</p>
+                        <div class="message-info">
+                            <small>Sistema inicializado | Token API configurado</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí..." autocomplete="off">
+                    <button id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="options">
+                    <label class="toggle">
+                        <input type="checkbox" id="webSearchToggle" checked>
+                        <span class="slider"></span>
+                        <span class="toggle-label">Búsqueda Web</span>
+                    </label>
+                    <label class="toggle">
+                        <input type="checkbox" id="aiToggle" checked>
+                        <span class="slider"></span>
+                        <span class="toggle-label">IA Avanzada</span>
+                    </label>
+                </div>
+                <div class="api-config">
+                    <input type="text" id="hfToken" placeholder="Token de Hugging Face" value="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" readonly>
+                    <small>Token configurado ✓</small>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>PROJECT 2.0 - JARVIS | IA con Hugging Face y Búsqueda Web | Token API Integrado</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
