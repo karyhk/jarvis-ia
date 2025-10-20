@@ -76,7 +76,9 @@ async function queryHuggingFaceAPI(prompt) {
             'qué es un átomo': 'Un átomo es la unidad básica de la materia. Está compuesto por un núcleo con protones y neutrones, y electrones que orbitan alrededor del núcleo.',
             'qué puedes hacer': 'Puedo responder preguntas, explicar conceptos, ayudarte con tareas y mantener conversaciones. ¡Pregúntame lo que quieras!',
             'quién eres': 'Soy JARVIS, un asistente de inteligencia artificial creado para ayudarte con cualquier consulta que tengas.',
-            'gracias': '¡De nada! Estoy aquí para ayudarte cuando lo necesites.'
+            'gracias': '¡De nada! Estoy aquí para ayudarte cuando lo necesites.',
+            'cómo estás': '¡Funcionando perfectamente! Listo para ayudarte con lo que necesites.',
+            'adiós': '¡Hasta luego! Fue un placer ayudarte.'
         };
         
         const lowerPrompt = prompt.toLowerCase();
@@ -147,3 +149,8 @@ userInput.addEventListener('keypress', (e) => {
 
 // Enfocar el input automáticamente
 userInput.focus();
+
+// Mensaje de bienvenida después de cargar
+setTimeout(() => {
+    addMessage('Puedes preguntarme sobre cualquier tema: ciencia, tecnología, historia, matemáticas, o simplemente conversar. ¡Estoy aquí para ayudarte!');
+}, 1000);
